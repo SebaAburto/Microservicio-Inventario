@@ -17,17 +17,17 @@ import lombok.NoArgsConstructor;
 
 
 @Entity
-@Table(name="Producto")
+@Table(name="Inventario")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 
 
-public class Producto {
+public class Inventario {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Integer producto_id;
+    private Integer inventario_id;
 
     @Column(nullable = false, length= 100)
     private String nombre;
@@ -36,7 +36,7 @@ public class Producto {
     private String descripcion;
 
     @Column(nullable = false)
-    private double precio => 0;
+    private double precio;
 
     @Column(nullable = false, length= 50)
     private String categoria;
@@ -44,12 +44,13 @@ public class Producto {
     @Column(nullable = false, length= 50)
     private String color;
 
+    @Column(nullable = false)
+    private Integer stock = 0;
+
     @Column(nullable = true)
     private Date fecha_creacion;
     
-    @OneToOne
-    private Tipo_talla tipo_talla;
+    @OneToMany
+    private Producto producto;
 
 }
-
-

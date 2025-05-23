@@ -24,9 +24,15 @@ public class Tipo_talla {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Integer Tipo_talla_id;
+    private Integer tipo_talla_id;
 
     @Column(nullable = false, length=10)
     private String descripcion;
 
 }
+
+//XS (Extra Small)
+//S (Small)
+//M (Medium)
+//L (Large)
+//XL (Extra Large)
