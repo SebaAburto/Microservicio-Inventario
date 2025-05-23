@@ -1,8 +1,5 @@
 package com.inventario.inventario.model;
 
-import java.util.Date;
-
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,36 +14,19 @@ import lombok.NoArgsConstructor;
 
 
 @Entity
-@Table(name="Producto")
+@Table(name="Talla")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 
 
-public class Producto {
+public class Talla {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Integer producto_id;
+    private Integer talla_id;
 
-    @Column(nullable = false, length= 100)
-    private String nombre;
-
-    @Column(nullable = false)
+    @Column(nullable = false, length=10)
     private String descripcion;
 
-    @Column(nullable = false)
-    private double precio;
-
-    @Column(nullable = false, length= 50)
-    private String categoria;
-
-    @Column(nullable = false)
-    private Integer stock = 0;
-
-    @Column(nullable = true)
-    private Date fecha_creacion;
-   
 }
-
-
