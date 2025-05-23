@@ -14,17 +14,17 @@ import lombok.NoArgsConstructor;
 
 
 @Entity
-@Table(name="Talla")
+@Table(name="Tipo_talla")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 
 
-public class Talla {
+public class Tipo_talla {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Integer talla_id;
+    private Integer Tipo_talla_id;
 
     @Column(nullable = false, length=10)
     private String descripcion;
