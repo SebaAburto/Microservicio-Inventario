@@ -46,7 +46,7 @@ public class Producto {
     private Date fecha;
    
     @Column(unique=true,nullable = false)
-    private String correo;
+    private String edad;
 }
 
 
