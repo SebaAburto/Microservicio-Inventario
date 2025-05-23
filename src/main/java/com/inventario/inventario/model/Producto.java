@@ -27,26 +27,21 @@ public class Producto {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Integer id;
-
-
-    @Column(unique = true, length= 13, nullable= false)
-    private String run;
-
+    private Integer producto_id;
 
     @Column(nullable = false)
     private String nombre;
 
-
     @Column(nullable = false)
-    private String apellido;
+    private String descripcion;
 
+    @Column(unique=true,nullable = false)
+    private double precio;
 
     @Column(nullable = true)
     private Date fecha;
    
-    @Column(unique=true,nullable = false)
-    private String edad;
+    
 }
 
 
