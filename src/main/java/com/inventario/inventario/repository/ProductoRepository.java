@@ -1,6 +1,6 @@
 package com.inventario.inventario.repository;
 
-import com.Microservicio-Inventario.cl.Microservicio-Inventario.Producto;
+import com.inventario.inventario.model.Producto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
