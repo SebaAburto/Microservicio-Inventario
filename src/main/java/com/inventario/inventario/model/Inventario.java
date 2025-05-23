@@ -47,7 +47,7 @@ public class Inventario {
     @Column(nullable = false)
     private Integer stock = 0;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private Date fecha_creacion;
     
     @OneToMany

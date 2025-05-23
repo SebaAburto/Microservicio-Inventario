@@ -44,7 +44,7 @@ public class Producto {
     @Column(nullable = false, length= 50)
     private String color;
 
-    @Column(nullable = true)
+    @Column(nullable = false)
     private Date fecha_creacion;
     
     @OneToOne
