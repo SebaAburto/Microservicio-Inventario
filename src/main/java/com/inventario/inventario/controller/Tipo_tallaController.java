@@ -1,7 +1,7 @@
 package com.inventario.inventario.controller;
 
 import com.inventario.inventario.model.Tipo_talla;
-import com.inventario.inventario.service.Tipo_tallaService;
+import com.inventario.inventario.Service.Tipo_tallaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.inventario.inventario.service;
+package com.inventario.inventario.Service;
 
 import com.inventario.inventario.model.Tipo_talla;
 import com.inventario.inventario.repository.Tipo_tallaRepository;

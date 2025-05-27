@@ -2,7 +2,7 @@ package com.inventario.inventario.model;
 
 import java.util.Date;
 
-
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -36,7 +36,7 @@ public class Producto {
     private String descripcion;
 
     @Column(nullable = false)
-    private double precio => 0;
+    private double precio;
 
     @Column(nullable = false, length= 50)
     private String categoria;

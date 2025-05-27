@@ -1,7 +1,7 @@
 package com.inventario.inventario.controller;
 
 import com.inventario.inventario.model.Inventario;
-import com.inventario.inventario.service.InventarioService;
+import com.inventario.inventario.Service.InventarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
