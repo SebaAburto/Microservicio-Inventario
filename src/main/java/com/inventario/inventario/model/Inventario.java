@@ -12,7 +12,6 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import jakarta.persistence.OneToMany;
 
 
 @Entity
@@ -48,8 +47,5 @@ public class Inventario {
 
     @Column(nullable = false)
     private Date fecha_creacion;
-    
-    @OneToMany
-    private Producto producto;
 
 }

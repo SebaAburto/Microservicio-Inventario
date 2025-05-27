@@ -2,7 +2,6 @@ package com.inventario.inventario.model;
 
 import java.util.Date;
 
-import jakarta.persistence.OneToOne;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -46,9 +45,6 @@ public class Producto {
 
     @Column(nullable = false)
     private Date fecha_creacion;
-    
-    @OneToOne
-    private Tipo_talla tipo_talla;
 
 }
 
