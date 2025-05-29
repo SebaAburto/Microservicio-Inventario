@@ -46,7 +46,6 @@ public class InventarioController {
         try {
             Inventario existente = inventarioService.findById(id);
             existente.setStock(inventario.getStock());
-            existente.setProducto(inventario.getProducto());
 
             return ResponseEntity.ok(inventarioService.save(existente));
         } catch (Exception e) {

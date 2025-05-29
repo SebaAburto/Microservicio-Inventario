@@ -2,13 +2,13 @@ package com.inventario.inventario.model;
 
 import java.util.Date;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -47,8 +47,9 @@ public class Producto {
     @Column(nullable = false)
     private Date fecha_creacion;
 
-    @OneToOne(mappedBy = "producto", cascade = CascadeType.ALL)
-    private Inventario inventario;
+    @ManyToOne
+    @JoinColumn(name = "inventario_id")
+    private Inventario inventario;      
 
 }
 
