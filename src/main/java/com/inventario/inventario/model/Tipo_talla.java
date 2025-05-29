@@ -13,8 +13,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
-
-
 @Entity
 @Table(name="Tipo_talla")
 @Data
