@@ -38,7 +38,7 @@ public class Producto {
     @Column(nullable = false)
     private double precio;
 
-    @Column(nullable = false, length= 50)
+    @Column(nullable = true, length= 50)
     private String categoria;
 
     @Column(nullable = false, length= 50)
