@@ -29,7 +29,7 @@ public class Inventario {
     private Integer inventario_id;
 
     @Column(nullable = false)
-    private Integer stock = 0;
+    private Integer stock = 10000;
 
     @OneToMany(mappedBy = "inventario", cascade = CascadeType.ALL)
     private List<Producto> productos;
