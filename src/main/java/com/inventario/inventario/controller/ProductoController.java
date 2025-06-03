@@ -52,6 +52,7 @@ public class ProductoController {
             prodExistente.setColor(producto.getColor());
             prodExistente.setFecha_creacion(producto.getFecha_creacion());
             prodExistente.setInventario(producto.getInventario());
+            prodExistente.setTipo_talla(producto.getTipo_talla());
 
 
             productoService.save(prodExistente);

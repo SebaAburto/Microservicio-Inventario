@@ -1,6 +1,8 @@
 package com.inventario.inventario.Service;
 
 import com.inventario.inventario.model.Producto;
+import com.inventario.inventario.model.Inventario;
+import com.inventario.inventario.model.Tipo_talla;
 import com.inventario.inventario.repository.ProductoRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,11 +1,6 @@
 package com.inventario.inventario.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,7 +17,7 @@ public class Tipo_talla {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer tipo_talla_id;
 
-    @Column(nullable = false, length=10)
+    @Column(nullable = false, length=20)
     private String descripcion;
 
 }
