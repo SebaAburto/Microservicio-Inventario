@@ -48,7 +48,10 @@ public class ProductoController {
             prodExistente.setNombre(producto.getNombre());
             prodExistente.setDescripcion(producto.getDescripcion());
             prodExistente.setPrecio(producto.getPrecio());
+            prodExistente.setCategoria(producto.getCategoria());
             prodExistente.setColor(producto.getColor());
+            prodExistente.setFecha_creacion(producto.getFecha_creacion());
+            prodExistente.setInventario(producto.getInventario());
 
 
             productoService.save(prodExistente);

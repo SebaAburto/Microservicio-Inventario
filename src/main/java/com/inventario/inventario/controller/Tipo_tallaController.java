@@ -46,7 +46,7 @@ public class Tipo_tallaController {
         try {
             Tipo_talla existente = Tipo_tallaService.findById(id);
             existente.setTipo_talla_id(tipoTalla.getTipo_talla_id());
-            existente.setProducto(tipoTalla.getProducto());
+            existente.setDescripcion(tipoTalla.getDescripcion());
 
             return ResponseEntity.ok(Tipo_tallaService.save(existente));
         } catch (Exception e) {
