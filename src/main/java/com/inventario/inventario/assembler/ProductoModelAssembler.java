@@ -1,6 +1,6 @@
 package com.inventario.inventario.assembler;
 
-import com.inventario.inventario.controller.ProductoController;
+import com.inventario.inventario.controller.ProductoControllerV2;
 import com.inventario.inventario.model.Producto;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.RepresentationModelAssembler;
@@ -14,7 +14,7 @@ public class ProductoModelAssembler implements RepresentationModelAssembler<Prod
     @Override
     public EntityModel<Producto> toModel(Producto producto) {
         return EntityModel.of(producto,
-                linkTo(methodOn(ProductoController.class).buscar(producto.getProducto_id().longValue())).withSelfRel(),
-                linkTo(methodOn(ProductoController.class).listar()).withRel("productos"));
+                linkTo(methodOn(ProductoControllerV2.class).buscar(producto.getProducto_id().longValue())).withSelfRel(),
+                linkTo(methodOn(ProductoControllerV2.class).listar()).withRel("productos"));
     }
 }
