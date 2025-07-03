@@ -22,7 +22,8 @@ public class ProductoService {
     }
 
     public Producto findById(Long id) {
-        return productoRepository.findById(id).get();
+        return productoRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Producto no encontrado"));
     }
 
     public Producto save(Producto producto) {
@@ -32,4 +33,17 @@ public class ProductoService {
     public void delete(Long id) {
         productoRepository.deleteById(id);
     }
+
+    public List<Producto> findByCategoria(String categoria) {
+        return productoRepository.findByCategoria(categoria);
+    }
+
+    public long countByCategoria(String categoria) {
+        return productoRepository.countByCategoria(categoria);
+    }
+
+    public List<Producto> findByNombre(String nombre) {
+        return productoRepository.findByNombreContainingIgnoreCase(nombre);
+    }
+
 }
